@@ -1,0 +1,19 @@
+<!-- transaction-form.component.html -->
+<div class="transaction-form">
+  <h2>Ajouter une transaction</h2>
+  <form (submit)="addTransaction()">
+    <div class="form-group">
+      <label for="amount">Montant :</label>
+      <input type="number" id="amount" [(ngModel)]="transactionAmount" name="amount" required>
+    </div>
+    <div class="form-group">
+      <label for="category">Catégorie :</label>
+      <select id="category" [(ngModel)]="transactionCategory" name="category" required>
+        <option value="dépense">Dépense</option>
+        <option value="entrée">Entrée</option>
+      </select>
+    </div>
+    <button type="submit">Ajouter</button>
+  </form>
+</div>
+
