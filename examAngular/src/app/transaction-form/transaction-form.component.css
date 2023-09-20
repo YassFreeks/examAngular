@@ -1,5 +1,6 @@
 /* transaction-form.component.css */
 .transaction-form {
+    text-align: center;
     background-color: #f5f5f5;
     padding: 20px;
     border: 1px solid #ccc;
