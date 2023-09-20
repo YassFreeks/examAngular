@@ -1,11 +1,11 @@
-<!-- transaction-list.component.html -->
+
 <div class="transaction-list">
-    <h2>Liste des transactions</h2>
-    <ul>
-      <li *ngFor="let transaction of transactions">
-        Montant : {{ transaction.amount }} €, Catégorie : {{ transaction.category }}, Date : {{ transaction.date | date }}
-      </li>
-    </ul>
-    <p>Solde : {{ calculateBalance() }} €</p>
-  </div>
-  
+  <h2>Liste des transactions</h2>
+  <ul>
+    <li *ngFor="let transaction of transactions">
+      Montant : {{ transaction.amount }} €, Catégorie :
+      {{ transaction.category }}, Date : {{ transaction.date | date }}
+    </li>
+  </ul>
+  <p>Solde : {{ calculateBalance() }} €</p>
+</div>

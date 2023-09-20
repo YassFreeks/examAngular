@@ -14,7 +14,6 @@ export class TransactionFormComponent {
   constructor(private transactionService: TransactionService) {}
 
   addTransaction() {
-    // Vérifiez les valeurs et ajoutez la transaction en utilisant le service
     if (this.transactionAmount && this.transactionCategory) {
       this.transactionService.addTransaction({
         amount: this.transactionAmount,
@@ -22,7 +21,7 @@ export class TransactionFormComponent {
         date: new Date()
       });
 
-      // Réinitialisez les champs du formulaire après l'ajout
+
       this.transactionAmount = 0;
       this.transactionCategory = '';
     }
